@@ -153,7 +153,7 @@ header{
   }
   .img-home{
     width: 570px;
-    height: 85vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -169,8 +169,7 @@ header{
     background-size: cover;
     border-radius: 4px;
     filter: grayscale(0.05) contrast(1.1) brightness(1.02);
-    transition:filter 0.3s ease;
-    
+    transition:filter 0.3s ease; 
   }
 
   .img-serv-home{
@@ -179,6 +178,18 @@ header{
     align-items: center;
     gap: 8px;
     
+  }
+  .img-serv-home .ft1-1{
+    width: 250px;
+    height: 210px;
+    background-image: url(ft-galeria/ft16.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    filter: grayscale(0.05) contrast(1.1) brightness(1.02);
+    transition:filter 0.3s ease; 
+    display: none;
   }
   .img-home .ft2{
     width: 250px;
@@ -207,23 +218,10 @@ header{
     filter: none;
   }
 
-/* .imagem-home img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-  } */
-
-
 .container-home{
     max-width: 550px;
     height: auto;
     padding: 0 10px;
-    /* position: absolute;
-    top: 10%;
-    right: 0;
-    z-index: 10;
-    max-width: 60%;
-    height: 80vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,7 +334,7 @@ header{
     margin-top: 1rem;
     gap: 2rem;
     flex-wrap: wrap;
-    padding: 20px 0;
+    padding: 10px 0;
 
 }
 .local-home p{
@@ -345,6 +343,7 @@ header{
     font-weight: 400;
     letter-spacing: 0.5px;
     color: #666;
+    padding: 5px 0;
 }
 .local-home p i{
     color: #333;
@@ -457,7 +456,7 @@ header{
     overflow: hidden;
 }
 .card-serv-etapas p{
-
+    padding: 0 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     letter-spacing: 0.6px;
@@ -499,9 +498,18 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 4rem;
+    gap: 2rem;
     flex-wrap: nowrap;
     padding: 40px 5px;
+}
+.contagem-atend{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 0 20px;
 }
 .contagem{
     padding: 10px 30px ;
@@ -535,8 +543,9 @@ header{
 }
 .convite p{
     margin: 0 auto;
-    max-width: 90%;
-    font-size: 17px;
+    max-width: 95%;
+    font-size: 16px;
+    letter-spacing: 0.4px;
     color: #666;
 }
 .convite p:nth-child(1){
@@ -667,7 +676,7 @@ header{
   
   /* Botão Ver Mais */
 .bnt-galeria-insta{
-    max-width: 550px;
+    max-width: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -694,20 +703,21 @@ header{
     box-shadow: 0 4px 12px rgba(243, 185, 233, 0.3);
   }
 
-  /* fim css */
-
+  
   /*********** AGENDA */
 .section-agenda{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    overflow: hidden;
-    
+    overflow: hidden;   
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     
 }
 .etapas-agendamento {
     text-align: center;
-    padding: 40px 10px 10px;
+    padding: 40px 10px 20px;
     overflow: hidden;
 }
   
@@ -761,9 +771,10 @@ header{
     top: 25px;
   }
   
-/* .calendly-inline-widget{
-    background-color: #f3cfd934;
-} */
+.calendly-inline-widget{
+    overflow: hidden;
+
+}
 
 /******************SOBRE */
 
@@ -773,7 +784,8 @@ header{
     position: relative;
     z-index: 18;
     overflow: hidden;
-    padding: 60px 5px 40px 5px;
+    padding: 60px 10px 40px 10px;
+    
   }
   
   .container-sobre {
@@ -802,7 +814,7 @@ header{
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 
   }
   .sobre-studio h2 {
@@ -1160,6 +1172,14 @@ footer{
     --webkit-background-clip: text;
     color: transparent;
 }
+.footer-links-geral{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 0 10px;
+}
 
 .footer-links-rapidos{
     display: flex;
@@ -1234,9 +1254,6 @@ footer{
         gap: 15px;
 
     }
-    .servico h2{
-        display: none;
-    }
     .card-serv-studio{
         gap: 3rem;
     }
@@ -1271,51 +1288,102 @@ footer{
     
     .container {
         width: 100%;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .container-home {
       width: 100%;
       align-items: left;
+      max-width: 100%;
     }
-    .img-home img{
-        max-width: 50%;
+    .title-slogan-home {
+        width: 100%;
     }
+    .title-slogan-home p{
+        width: 97%;
+    }
+    
     .img-home{
         width: 100%;
+        height: auto;
         flex-direction: row;
-        height: 170px;
-
+        height: auto;
     }
-    .img-home .ft1 {
-        max-width: 150px;
-        height: 150px;
-        background-size: contain;
+    .img-home .ft1{
+        display: none;
     }
+    
     .img-serv-home{
         flex-direction: row;
     }
-    .img-home .ft2 {
-        max-width: 130px;
+    
+    /* .img-serv-home .ft1-1, .ft2, .ft3 {
+        display: block;
+        margin: 0 auto;
+        max-width: 120px;
+        background-size: cover;
+    } */
+    
+    
+    .img-serv-home .ft1-1 {
+        display: block;
+        max-width: 120px;
         height: 150px;
         background-size: cover;
     }
-    .img-home .ft3 {
-        max-width: 130px;
+    
+    .img-serv-home .ft2 {
+        max-width: 120px;
+        height: 150px;
+        background-size: cover;
+    }
+    .img-serv-home .ft3 {
+        max-width: 120px;
         height: 150px;
         background-size: contain;
   }
     .contagem-regressiva{
         flex-direction: column;
   }
+  /************ GALERIA  */
+  .gallery-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+  }
 
+  .gallery-item {
+    flex: 0 0 auto;
+    min-width: 80%;
+    max-width: 320px;
+    scroll-snap-align: start;
+  }
+
+  .bnt-galeria-insta{
+    max-width: 350px;
+  }
     /* sobre */
+    .section-sobre {
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .container-sobre {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+
     }
 
     .container-sobre img {
         max-width: 100%;
+    }
+    .dados-local{
+        flex-direction: column;
+        gap: 0;
     }
 
     .sobre-studio {
@@ -1360,7 +1428,11 @@ footer{
 
     /********* FOOTER */
     .container-footer{
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer-links-geral{
+        width: 100%;
+        gap: 20px;
     }
     .footer-logotipo{
         padding: 10px 0;
@@ -1378,136 +1450,3 @@ footer{
         gap: 7px;
     }
 }
-
-
-
-
-
-/*.container-home{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    padding: 0 20px;
-}
-.title-slogan-home{
-    margin-top: 3rem;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    padding: 60px 0;
-}
-.title-slogan-home h2{
-    font-family: 'Lato', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: var(--spacing-margin);
-
-}
-.title-slogan-home h1{
-    font-family: "Montserrat", sans-serif;
-    font-size: 5rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.title-slogan-home p{
-    font-family: 'Lato' sans-serif;
-    margin-top: 3rem;
-    font-size: 1.5rem;
-    letter-spacing: 0.9;
-    width: 90%;
-    color: #333;
-    line-height: 1.5;
-}
-.s1{
-    color: var(--azul_marinho);
-    display: inline-block;
-    font-weight: 400;
-    transform: rotate(-1.5deg);
-    padding: 0 4px;
-    font-size: 2rem;
-}
-.s2, .s3, .s4{
-    font-weight: 600;
-}
-.s4{
-    background-color:#276e772a;
-}
-
-.btn-home{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 10px 0 40px 0;
-    flex-wrap: nowrap;
-}
-.btn-home button{
-    width: 250px;
-    height: auto;
-    border: none;
-    background-color: transparent;
-    padding: 8px 10px;
-}
-.btn-home button a{
-    font-size: var(--text-page);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    color: var(--cor_preto);
-    letter-spacing: 0.6px;
-    line-height: 1.4;
-}
-.btn-home button .btn-agendar{
-    color: var(--branco);
-}
-.btn-home button:nth-child(1){
-    border: 1.4px solid #CC1C6B;
-    border-radius: 5px;
-}
-.btn-home button:nth-child(1):hover{
-    border: 1.4px solid #F3CFD9;
-    transition: all 0.3s ease-in-out;
-}
-.btn-home button:nth-child(1):active{
-    transform: scale(0.95);
-}
-.btn-home button:nth-child(2){
-    border-radius: 5px;
-    background-color: var(--azul_marinho);
-}
-.btn-home button:nth-child(2):hover{
-    background-color: #1a6269b7;
-    transition: all 0.3s ease-in-out;
-}
-.btn-home button:nth-child(2):active{
-    transform: scale(0.95);
-}
-.local-home{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-.local-home p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    color: #666;
-}
-.local-home p i{
-    color: #333;
-} */
-
-
