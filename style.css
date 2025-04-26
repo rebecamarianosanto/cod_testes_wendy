@@ -12,39 +12,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* .svg{
-    width: 250px;
-    height: 250px;
-    background-image: url(ft-galeria/flor-clean.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    transform: rotate(160deg);
-    position: absolute;
-    top: -10%;
-    left: -4%;
-    z-index: -1;
-    opacity: 0.2;
-    overflow: hidden;
-} */
-/* 
-.svg2{
-    width: 350px;
-    height: 350px;
-    background-image: url(ft-galeria/flor-clean.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    transform: rotate(0deg);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0.2;
-    overflow: hidden;
-} */
 .svg3{
     height: 350px;
     max-width: 40px;
@@ -55,33 +22,6 @@ html{
     z-index: 1;
     overflow: hidden;
 }
-/* .svg3{
-    border: 1px solid #F3CFD9;
-    height: 350px;
-    display: flex;
-    position: absolute;
-    top: 70%;
-    left: 2%;
-    z-index: -1;
-    overflow: hidden;
-} */
-/* .svg4{
-    width: 590px;
-    height: 550px;
-    background-image: url(ft-galeria/flor.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    transform: rotate(0deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    overflow: hidden;
-} */
-
-
 
 header{
     width: 100%;
@@ -93,9 +33,9 @@ header{
     padding: 0 40px;
 }
 .logo{
-    width: 60px;
-    height: 60px;
-    padding: 5px;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
 }
 .logo img{
     width: 100%;
@@ -144,8 +84,10 @@ header{
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    background-image: url(ft-galeria/svg\ rose-clean.png);
+    background-image: url(ft-comp-studio/svg\ rose-clean.jpg);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
@@ -162,7 +104,6 @@ header{
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    
     padding: 0 0 40px 0;
     background: linear-gradient(transparent,#FDFDFD, #FFDDE5 );
     
@@ -179,7 +120,7 @@ header{
   .img-home .ft1{
     width: 250px;
     height: 430px;
-    background-image: url(ft-galeria/ft16.png);
+    background-image: url(ft-estudio-wendy/ft16-home.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -198,7 +139,7 @@ header{
   .img-serv-home .ft1-1{
     width: 250px;
     height: 210px;
-    background-image: url(ft-galeria/ft16.png);
+    background-image: url(ft-estudio-wendy/ft16-home.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -210,7 +151,7 @@ header{
   .img-home .ft2{
     width: 250px;
     height: 210px;
-    background-image: url(ft-galeria/design_de_sobrancelha.jpg);
+    background-image: url(ft-estudio-wendy/design_de_sobrancelha.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -221,7 +162,7 @@ header{
   .img-home .ft3{
     width: 250px;
     height: 210px;
-    background-image: url(ft-galeria/ft-p7.jpg);
+    background-image: url(ft-estudio-wendy/ft-p7.jpg);
     background-repeat: no-repeat;
     background-position: center ;
     background-size: cover;
@@ -918,7 +859,7 @@ header{
   .svg-sobre{
     width: 350px;
     height: 350px;
-    background-image: url(ft-galeria/flor-clean.png);
+    background-image: url(ft-estudio-wendy/bg-estudio/flor-clean.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1070,7 +1011,7 @@ header{
 .section-localizacao{
     min-height: 90vh;
     margin: 0 auto;    
-    background-image: url(ft-galeria/background.png);
+    background-image: url(ft-estudio-wendy/bg-estudio/background.jpg);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
@@ -1326,16 +1267,33 @@ footer{
   /* Responsividade */
 
 @media screen and (max-width: 798px) {
+    /* header */
+    header{
+        padding: 10px 10px;
+    }
+    .links-header{
+        display: none;
+    }    
+
     .container-home{
         max-width: 100%;
         align-items: center;
         justify-content: center;
         padding: 10px;
+        margin-bottom: 2rem;
     }
-
+    .title-slogan-home{
+        padding: 0px;
+    }
     .btn-home{
         gap: 15px;
+        flex-direction: column;
 
+    }
+    .btn-home .btn-agendar{
+        width: 100%;
+        max-width: 80%;
+        padding: 12px 0;
     }
     .card-serv-studio{
         gap: 3rem;
@@ -1379,6 +1337,9 @@ footer{
       width: 100%;
       align-items: left;
       max-width: 100%;
+      padding: 10px;
+      margin-bottom: 2rem;
+      margin-top: 0;      
     }
     .title-slogan-home {
         width: 100%;
@@ -1391,7 +1352,6 @@ footer{
         width: 100%;
         height: auto;
         flex-direction: row;
-        height: auto;
     }
     .img-home .ft1{
         display: none;
