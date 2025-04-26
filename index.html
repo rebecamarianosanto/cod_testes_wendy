@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG</title>
+    <title>Estúdio Wendy Andrade | Designer de Unhas e Sobrancelhas em Carapicuíba</title>
+    <!-- Aparece logo abaixo do título no Google. Deve ter até 160 caracteres, ser clara e convidativa. -->
+    <meta name="description" content="Especialista em unhas e sobrancelhas em Carapicuíba/SP. Restauração, design e alongamento em gel. Agende seu horário e venha conhecer nosso espaço!">
+    <!-- Palavras-chave que descrevem o conteúdo da página. Devem ser relevantes e específicas. (opcional, pouco impacto hoje em dia)-->
+    <meta name="keywords" content="Designer de unhas, sobrancelha, restauração de unhas, unhas em gel, Designer de sobrancelha com henna, minicure, pedicure, Carapicuíba, estúdio de beleza, estetíca">
+    <!-- robots - Garante que os motores de busca indexem e sigam os links da página. -->
+    <meta name="robots" content="index, follow">
+    <!-- meta author - serve para informar quem é o autor da página ou do conteúdo. -->
+    <meta name="author" content="Rebeca Mariano">
+    <!-- Melhoram a exibição do link ao ser compartilhado no Facebook, WhatsApp, Instagram, etc. -->
+    <meta property="og:title" content="Studio de Unhas e Sobrancelhas em Carapicuíba" />
+    <meta property="og:description" content="Agende com especialistas em restauração e design de unhas e sobrancelhas. Atendimento em Carapicuíba/SP!" />
+    <meta property="og:image" content="URL-da-imagem.jpg" />
+    <meta property="og:url" content="https://seudominio.com" />
+    <!-- Meta Theme Color (para dispositivos móveis) Personaliza a cor da barra do navegador em celulares Android. -->
+    <meta name="theme-color" content="#FFC0CB">
+    <!-- ajuda o Google a entender qual é a "versão oficial" da página. -->
+    <link rel="canonical" href="https://seudominio.com/pagina-principal" />
+    <!------------------ CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- favicon - ícone que aparece na aba do navegador. -->
     <link rel="shortcut icon" href="ft-galeria/favicon.ico" type="image/x-icon">
-
+    <!-- efect aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- link efeito swiper10 -->
     <link rel="stylesheet" 
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
-  
-
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <!-- Fotorama -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -43,17 +60,17 @@
                 <img src="favicon_io - wendy/favicon.ico" alt="Logo Studio Wendy Andrade">
             </a>
             <div class="links-header">
-                <a href="#servico-studio">Serviços</a>
+                <a href="#servicos">Serviços</a>
                 <a href="#agendamento">Agendar horário</a>
                 <a href="#localizacao">Localização</a>
             </div>
             <!-- Analisar a ideia de social media (insta/ whats) -->
             <menu>
-                <button class="bnt-menu"><i class="fa-solid fa-bars-staggered"></i></button>
+                <button class="bnt-menu"><i class="fa-solid fa-bars"></i></button>
                 <div class="links-menu">
                     <ul>
                         <a href="./index-home.html">Home</a>
-                        <a href="#servico-studio">Serviços</a>
+                        <a href="#servicos">Serviços</a>
                         <a href="#agendamento">Agendar horário</a>
                         <a href="#galeria-fotos">Galeria de fotos</a>
                         <a href="#avaliacao-cliente">Avaliação dos clientes</a>
@@ -77,38 +94,46 @@
             </div>
             <div class="container-home">
                 <div class="title-slogan-home">
-                    <h2>Studio de beleza e estética</h2>
-                    <h1>Wendy Andrade</h1>
-                    <p>Especialista em <span class="s1">designer</span> e restauração de <span class="s2">unhas</span> e <span class="s3">sobrancelhas</span>. Descubra como pequenos cuidados revelam grandes transformações na sua beleza e <span class="s4">autoestima</span>.</p>
-                    <!-- <p>Seu momento de cuidado e beleza começa aqui.</p> -->
+                    <p class="subtitle-home" data-aos="zoom-in" data-aos-duration="1000">Studio de beleza e estética</p>
+
+                    <h1 data-aos="zoom-in" data-aos-duration="2001">Wendy Andrade</h1>
+
+                    <p data-aos="zoom-in" data-aos-duration="2002">Especialista em <span class="s1">designer</span> e restauração de <span class="s2">unhas</span> e <span class="s2">sobrancelhas</span>. Localizada em Carapicuíba/ SP, sendo referência entre as clientes que buscam elevar sua beleza, bem-estar e um atendimento que valoriza cada <span class="s3">detalhe</span>.</p>
+                    <p data-aos="zoom-in" data-aos-duration="2003">Agende seu horário e venha conhecer nosso espaço!</p>
                 </div>
                 <div class="btn-home">
-                    <a class="btn-agendar" href="#servico-studio">
+                    <a class="btn-agendar" href="#servicos">
                        <!-- <img src="ft-galeria/lixador-de-unha.png" alt="img"> -->
-                        Ver Serviços
+                        Ver serviços
                     </a>
                     <a class="btn-agendar" href="#agendamento">
-                        <!-- <i class="fas fa-calendar-alt"></i> -->
-                        Agendar horário
+                        Agendar um horário <i class="fa-solid fa-chevron-right"></i>
                     </a>
                 </div>
-                <div class="local-home">
-                    <p><i class="fa-solid fa-location-dot"></i> Rua Mauá, 001 Ariston - Carapicuíba/ SP</p>
-                    <p><i class="fa-solid fa-clock"></i> Seg a Sáb das 8h as 18h</p>
-                </div>
+                <!-- <div class="local-home">
+                    <p data-aos="fade-right" data-aos-duration="2005"><i class="fa-solid fa-location-dot"></i> Rua Mauá, 001 Ariston - Carapicuíba/ SP</p>
+                    <p data-aos="fade-right" ><i class="fa-solid fa-clock"></i> Seg a Sáb das 8h as 18h</p>
+                </div> -->
             </div>
         </div>
     </div>
 
     <!-------------- SERVIÇO -->
-    <section class="servico" id="servico-studio">
-        <h2>Serviços</h2>
+    <section class="servico" id="servicos">
+        <h2 data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="50"
+     data-aos-offset="0">Serviços</h2>
         <div class="container-serv">
-            <h3>Seu momento de cuidado e beleza começa aqui!</h3>
+            <h3 data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="50"
+     data-aos-offset="0">Seu momento de cuidado e beleza começa aqui!</h3>
             <div class="card-serv-studio">
 
                 <!-- card manicure e pedicure -->
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="1000">
                     <div class="dados-card">
                         <img src="ft-galeria/lixador-de-unha (1).png" alt="Imagem card serviço">
                         <h4>Manicure e Pedicure</h4>
@@ -123,7 +148,8 @@
                 </div>
 
                 <!-- card restauração de unha -->
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="1000">
                     <div class="dados-card">
                         <img src="ft-galeria/restauracao-de-unhas.png" alt="Imagem card serviço">
                         <h4>Restauração de Unhas</h4>
@@ -140,7 +166,8 @@
                 </div>
 
                 <!-- card Design de sombrancelha -->
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+                data-aos-duration="1000">
                     <div class="dados-card">
                         <img src="ft-galeria/sobrancelha.png" alt="Imagem card serviço">
                         <h4>Design de Sobrancelhas</h4>
@@ -187,12 +214,13 @@
                 <p>Cada número representa clientes que confiaram em minha experiência para realçar sua beleza natural.</p>
         
             </div>
-            <a class="contagem-btn" href="#">Agendar um horário agora<i class="fa-solid fa-arrow-right"></i></a>
+            <a class="contagem-btn" href="#agendamento">Agendar um horário agora<i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </section>
 
     <!--------------- GALERIA -->
-    <section class="section-galeria">
+    <section class="section-galeria" data-aos="fade-up"
+    data-aos-duration="3000">
         <div class="galeria" id="galeria-fotos">
             <h2 class="section-title">Nossa Galeria de Transformações</h2>
         
@@ -368,8 +396,6 @@
                         <p>Design francesinha azul</p>
                     </div>
                 </div>
-
-
             </div>
             <a class="bnt-galeria-insta" href="https://www.instagram.com/unhas.6839?igsh=ZTA2MG9lOTVtMTR1" target="_blank" next="external">Venha conferir mais resultado no Instagram</a>
         </div>
@@ -388,7 +414,7 @@
               <div class="linha"></div>
               <div class="etapa">
                 <div class="circle">2</div>
-                <p>Preencha seus dados e selecione os procedimentos desejados</p>
+                <p>Preencher seus dados e selecionar os procedimentos desejados</p>
               </div>
               <div class="linha"></div>
               <div class="etapa">
@@ -450,7 +476,6 @@
                 </div>
             </div>
 
-
         </div>
         <div class="svg-sobre"></div>
     </section>
@@ -469,7 +494,7 @@
                     <div class="card-depoimentos">
                         <i class="fa-solid fa-quote-left"></i>
                         <div class="card-comentario-txt">
-                            <blockquote> "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima modi quia aut error eos! Dicta iure vitae quas excepturi labore."
+                            <blockquote> Simplesmente impecável! Minhas unhas nunca ficaram tão lindas. Atendimento maravilhoso, super recomendo!
                             </blockquote>
                             <div class="card-dados-cliente">
                                 <p class="nome">Rebeca Mariano</p>
@@ -484,7 +509,7 @@
                     <div class="card-depoimentos">
                         <i class="fa-solid fa-quote-left"></i>
                         <div class="card-comentario-txt">
-                            <blockquote> "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima modi quia aut error eos! Dicta iure vitae quas excepturi labore."
+                            <blockquote> "Atendimento excelente e muito profissional. Sempre saio me sentindo renovada. As unhas ficam perfeitas e duram muito tempo!"
                             </blockquote>
                             <div class="card-dados-cliente">
                                 <p class="nome">Rebeca Mariano</p>
@@ -499,7 +524,7 @@
                     <div class="card-depoimentos">
                         <i class="fa-solid fa-quote-left"></i>
                         <div class="card-comentario-txt">
-                            <blockquote> "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima modi quia aut error eos! Dicta iure vitae quas excepturi labore."
+                            <blockquote> "Sou cliente fiel há anos! Confio de olhos fechados no trabalho e na dedicação da Wendy. Adoro fazer esmaltação em gel com blindagem, fica incrível."
                             </blockquote>
                             <div class="card-dados-cliente">
                                 <p class="nome">Rebeca Mariano</p>
@@ -514,7 +539,7 @@
                     <div class="card-depoimentos">
                         <i class="fa-solid fa-quote-left"></i>
                         <div class="card-comentario-txt">
-                            <blockquote> "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima modi quia aut error eos! Dicta iure vitae quas excepturi labore."
+                            <blockquote> "Fiz a restauração das minhas unhas e fiquei encantada. Qualidade nota mil!"
                             </blockquote>
                             <div class="card-dados-cliente">
                                 <p class="nome">Rebeca Mariano</p>
@@ -529,8 +554,8 @@
                     <div class="card-depoimentos">
                         <i class="fa-solid fa-quote-left"></i>
                         <div class="card-comentario-txt">
-                            <blockquote> "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima modi quia aut error eos! Dicta iure vitae quas excepturi labore."
-                            </blockquote>
+                            <blockquote> "Melhor lugar de Carapicuíba para quem quer realçar a beleza com confiança. Fiz o design com rena e amei o resultado! Durou bastante e valorizou meu olhar demais"
+                            </blockquote> 
                             <div class="card-dados-cliente">
                                 <p class="nome">Rebeca Mariano</p>
                                 <p class="login-cliente">Instagram: @rebecamariano2</p>
@@ -544,7 +569,7 @@
                     <div class="card-depoimentos">
                         <i class="fa-solid fa-quote-left"></i>
                         <div class="card-comentario-txt">
-                            <blockquote> "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima modi quia aut error eos! Dicta iure vitae quas excepturi labore."
+                            <blockquote> "Achei que não tinha mais solução pras minhas unhas, mas a Wendy fez um trabalho incrível! A  restauração ficou perfeita e recuperei minha autoestima. Super recomendo!"
                             </blockquote>
                             <div class="card-dados-cliente">
                                 <p class="nome">Rebeca Mariano</p>
@@ -621,11 +646,40 @@
         </div>
 
     </footer>
-    
 
-
-    
+    <!-- BNT WHATSAPP -->
+    <a href="https://wa.me/5511949158503?text=Ol%C3%A1%2C%20tudo%20bem%3F"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="Fale pelo WhatsApp">
+   <i class="fab fa-whatsapp"></i>
+    </a>
+    <script>
+        window.addEventListener('scroll', () => {
+          const servicos = document.querySelector('#servicos');
+          const zap = document.querySelector('.whatsapp-float');
+          const top = servicos.getBoundingClientRect().top;
       
+          zap.classList.toggle('show', top < window.innerHeight * 0.8);
+        });
+    </script>
+
+    <!-- btn-arrow-top -->
+    <a href="#" class="btn-arrow-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+      
+  
+ 
+    
+
+
+    
+    <!-- script aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- script link swiper10 -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

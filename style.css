@@ -8,7 +8,7 @@ html{
     font-family: 'Poppins', sans-serif;
     list-style: none;
     background-color: #FDFDFD;
-    font-size: 65.5%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -156,14 +156,13 @@ header{
     max-width: 100%;
     width: 100%;
     height: auto;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 2rem;
-    flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
+    
     padding: 0 0 40px 0;
     background: linear-gradient(transparent,#FDFDFD, #FFDDE5 );
     
@@ -224,7 +223,7 @@ header{
     height: 210px;
     background-image: url(ft-galeria/ft-p7.jpg);
     background-repeat: no-repeat;
-    background-position: top ;
+    background-position: center ;
     background-size: cover;
     border-radius: 4px;
     filter: grayscale(0.05) contrast(1.1) brightness(1.02);
@@ -236,13 +235,15 @@ header{
   }
 
 .container-home{
-    max-width: 550px;
+    max-width: 600px;
     height: auto;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 10rem;
 }
 .title-slogan-home{
     width: 100%;
@@ -250,13 +251,13 @@ header{
 
 
 }
-.title-slogan-home h2{
+.subtitle-home{
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .title-slogan-home h1{
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     font-weight: 900;
@@ -264,15 +265,13 @@ header{
     background-clip: text;
     --webkit-background-clip: text;
     color: transparent;
-
-
 }
 .title-slogan-home p{
     font-family: 'Lato' sans-serif;
     margin-top: 1rem;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.5px;
-    width: 85%;
+    max-width: 95%;
     color: #333;
     line-height: 1.6;
     padding: 20px 0 0 0;
@@ -283,28 +282,27 @@ header{
     font-weight: 400;
     transform: rotate(-1.5deg);
     padding: 0 4px;
-    font-size: 1.5rem;
-
+    font-size: 1.7rem;
 }
-.s2, .s3, .s4{
+.s2, .s3{
     font-weight: 600;
 }
-.s4{
-    background-color:#276e772a;
+.s3{
+    background-color:#F3CFD9;
 }
 .btn-home{
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: nowrap;
     gap: 1.5rem;
     padding: 5px 0;
 }
 
 .btn-agendar{
-    max-width: 250px;
-    width: 300px;
+    max-width: 300px;
+    width: 320px;
     height: auto;
     padding: 7px 10px;
     display: flex;
@@ -316,29 +314,40 @@ header{
     border-radius: 8px;
     text-decoration: none;
     color: #000;
-    text-transform: capitalize;
-    font-size: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
     font-weight: 500;
+    letter-spacing: 0.6px;
 }
-.btn-agendar:nth-child(2){
-    border: none;
-    background-color: #F3CFD9;
-}
-
 .btn-home .btn-agendar:nth-child(1):hover{
     transition: all 0.2s ease-in-out;
     font-weight: 600;
     transform: scale(1.02)
+}
+.btn-agendar:nth-child(2){
+    border: none;
+    background-color: #000;
+    color: #fff;
 }
 .btn-home .btn-agendar:nth-child(2):hover{
     transition: all 0.2s ease-in-out;
     font-weight: 600;
     transform: scale(1.02)
 }
+.btn-agendar:nth-child(2):hover i {
+    animation: arrowMove 0.8s infinite;
+  }
+  
+  @keyframes arrowMove {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+}
 
 .btn-home .btn-agendar:active{
     transform: scale(0.95);
 }
+/* 
 .local-home{
     width: 100%;
     height: auto;
@@ -360,7 +369,7 @@ header{
 }
 .local-home p i{
     color: #333;
-}
+} */
 
 /**************SERVIÇOS */
 .servico{
@@ -762,6 +771,7 @@ header{
   
 .calendly-inline-widget{
     overflow: hidden;
+    background: linear-gradient(45deg, #ED53CA 20%, #F3CFD9 80%);
 
 }
 
@@ -773,7 +783,7 @@ header{
     position: relative;
     z-index: 18;
     overflow: hidden;
-    padding: 20px 10px 40px 10px;
+    padding: 40px 10px 40px 10px;
     
   }
   
@@ -876,15 +886,35 @@ header{
     margin-bottom: 0.6rem;
 
   }
+  .local-home{
+    margin-top: 0.8rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+
+}
+.local-home p{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #666;
+    padding: 5px 0;
+}
+.local-home p i{
+    color: #333;
+}
   .dados-local{
     display: flex;
     gap: 2rem;
   }
-  .local-home p {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
+
   .svg-sobre{
     width: 350px;
     height: 350px;
@@ -939,9 +969,9 @@ header{
   }
 
   .swiper-slide{
-    
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 14px;
     padding: 30px 10px;
 
@@ -973,26 +1003,33 @@ header{
     color: #f3cfd965;
   }
   .card-comentario-txt{
+    /* position: absolute;
+    top: 20%; */
     max-width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
     padding: 10px 15px;
   }
   blockquote{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     color: #333;
     font-style: italic;
     letter-spacing: 0.6px;
+  }
+  .card-dados-cliente{
+    display: flex;
+    flex-direction: column;
+    
   }
   .card-dados-cliente p{
     color: #666;
     letter-spacing: 0.6px;
     font-size: 11px;
     font-weight: 400;
-
   }
 
 .swiper-button-prev,
@@ -1227,6 +1264,61 @@ footer{
 
   }
 
+  /* BTN WHATSAPP */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #25d366;
+    color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+  .whatsapp-float i {
+    color: #fff;
+  }
+  
+  .whatsapp-float.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
+  /* BNT ARROW TOP */
+  .btn-arrow-top{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    z-index: 1001;
+    
+    transition: opacity 0.3s ease;
+
+
+  }
+  .btn-arrow-top i {
+    color: #C813A0;
+  }
+  
 
 
 
